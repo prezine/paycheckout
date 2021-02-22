@@ -5,23 +5,33 @@
 	<title>Pay Checkout</title>
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<link rel="stylesheet" href="./assets/css/custom.css">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
 	
 	<section class="__checkoutcontainer">
 		<div class="__checkoutwrapper">
 				<span class="__checkouticon">
-					<img src="https://toastlog.com/img/logos/cssscan.svg" alt="">
+					<img src="https://farmsby.com/assets/img/favicon.png" alt="">
 				</span>
 			<div class="__checkoutheader">
-				<p class="__checkouttitle">Invoice from Circlepanda Limited</p>
+				<p class="__checkouttitle">Invoice from Farmsby LTD</p>
 				<p class="__checkoutsubtitle">Billed to Precious Tom</p>
 			</div>
 			<div class="__checkoutbody">
 				<p class="__checkoutsubtitle">USD 70.00 due by Feb 1st, 2021</p>
+				<div class="btn-wrapper text-center py-5">
+					<button class="bg-white active:bg-gray-100 text-gray-800 font-normal px-16 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs" type="button" style="transition: all 0.15s ease;">
+						<i class="far fa-credit-card"></i> <span class="pl-2">Card</span>
+					</button>
+					<button class="bg-white active:bg-gray-100 text-gray-800 font-normal px-16 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs" type="button" style="transition: all 0.15s ease;">
+						<i class="fab fa-bitcoin"></i> <span class="pl-2">Bitcoin</span>
+					</button>
+				</div>
 			</div>
 		</div>
 	</section>
 
+	<script src="https://kit.fontawesome.com/49e4b637ca.js" crossorigin="anonymous"></script>
 </body>
 </html>
