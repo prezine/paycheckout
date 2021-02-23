@@ -220,7 +220,7 @@ var app;
 	};
 
 	app.monitorCcFormat = function ($elem) {
-		var cc_num = $elem.val().replace(/\D/g, "");
+		var cc_num = $elem.val().replace(/\W/gi, '').replace(/(.{4})/g, '$1  ');
 		var card_type = app.getCardType(cc_num);
 		$elem.val(app.formatCardNumber(cc_num, card_type));
 		app.addCardClassIdentifier($elem, card_type);
